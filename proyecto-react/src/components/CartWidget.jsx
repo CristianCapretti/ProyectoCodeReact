@@ -1,12 +1,13 @@
-//import Cart from './images/Cart'
+import Cart from './images/Cart.svg'
 
 const CartWidget=()=>{
     return (
-    <div className="justify-content-end">
-        <h1>HOLA</h1>
-        
-    </div>
-
+            <button type="button" className="btn btn-light position-relative">
+                <img src={Cart} alt="Carrito" width={20} />
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">1</span>
+            </button>
+            
+       
     )
 
 }

@@ -1,12 +1,14 @@
-const ItemListContainer=()=>{
+const ItemListContainer = ({greeting}) => {
+        return (
 
-    return (
-        <div>
-
-        </div>
-    )
-
-
+            <div className="card p-5 item">
+                <div className="card-body text-center">
+                   {greeting}
+                </div>
+            </div>
+        )
 }
+    
+
 
 export default ItemListContainer;

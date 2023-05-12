@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerSyle{
+
+ padding-top: 10px;
+ padding-right: 15px;
+}
+button{
+  max-height: 35px;
+  margin-top: 5px;
+}
+.item{
+
+  margin-top: 100px;
+}

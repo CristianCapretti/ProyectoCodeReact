@@ -5,9 +5,8 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <div>
-      
       <Header />
-      <ItemListContainer />
+      <ItemListContainer greeting={"Sitio en construccion"} />
     </div>
   );
 }

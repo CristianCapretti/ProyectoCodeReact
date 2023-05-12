@@ -1,4 +1,4 @@
-const Main=()=>{
+const NavBar=()=>{
 
     return(
         //nav
@@ -10,4 +10,4 @@ const Main=()=>{
 
 }
 
-export default Main
+export default NavBar

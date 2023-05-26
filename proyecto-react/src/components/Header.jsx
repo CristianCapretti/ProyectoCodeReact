@@ -13,12 +13,7 @@ const Header=()=>{
                 </div>
                 <div className="col-lg-1 text-end ">
                     <div className="row justify-content-center">
-                        <div className="col-lg-6 text-end">
-                            <User />
-                        </div>
-                        <div className="col-lg-6 text-end">
-                            <CartWidget />
-                        </div>
+                       
                     </div>
                    
                 </div>

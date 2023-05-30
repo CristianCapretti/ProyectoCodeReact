@@ -3,7 +3,6 @@ import User from "./User"
 const NavBar=()=>{
 
     return(
-        //nav
         <div className="navbar bg-dark  ">
             <ul className="navbar-nav flex-row flex-wrap ">
                 <li className="nav-item">

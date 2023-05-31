@@ -1,18 +1,19 @@
 import CartWidget from "./CartWidget"
 import User from "./User"
+import { Link } from "react-router-dom";
 const NavBar=()=>{
 
     return(
         <div className="navbar bg-dark  ">
             <ul className="navbar-nav flex-row flex-wrap ">
                 <li className="nav-item">
-                    <a className="nav-link text-light ms-3" aria-current="page" href="#">Hombre</a>
+                    <Link className="nav-Link text-light ms-3" aria-current="page" to={'/category/hombre'}>Hombre</Link>
                  </li>
                 <li className="nav-item">
-                    <a className="nav-link text-light ms-3" href="#">Mujer</a>
+                    <Link className="nav-Link text-light ms-3" to={'/category/mujer'}>Mujer</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link text-light ms-3" href="#">Destacado</a>
+                    <Link className="nav-Link text-light ms-3" to={'/category/destacado'}>Destacado</Link>
                 </li>
             </ul>
             <ul className="navbar-nav flex-row flex-wrap ">

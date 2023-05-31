@@ -32,3 +32,10 @@ button{
   box-shadow: 13px 6px 28px 2px rgba(0,0,0,0.1);
   cursor: pointer;
 }
+.imgSize{
+  max-height:270px ;
+}
+.card-body{
+  min-height: 170px;
+  max-height: 170px;
+}

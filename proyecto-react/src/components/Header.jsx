@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 import Logo from "./images/logo2.png"
 const Header=()=>{
@@ -6,7 +7,7 @@ const Header=()=>{
         <div className="container-fluid ">
             <div className="row  headerSyle ">
                 <div className="col-lg-11 ">
-                    <h1> <img src={Logo} alt="Carrito" width={45} /> Urban Shop</h1> 
+                    <h1><Link to={'/'}> <img src={Logo} alt="Carrito" width={45} /> Urban Shop</Link></h1> 
                 </div>
                 <div className="col-lg-1 text-end ">
                     <div className="row justify-content-center"> 

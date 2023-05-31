@@ -1,27 +1,21 @@
 import { useEffect, useState } from "react";
 import Item from "../components/Item";
 import Productos from "../components/json/data.json"
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({ greeting }) => {
-    
-    
+const ItemListContainer = () => {
+    const {id}=useParams();
     const [data, SetData]=useState([]);
-    useEffect(()=>{
-        /*fetch(Productos)
-        .then(response=>response.json())
-        .then(data=> 
-            {SetData(data.results)})
-*/ const promesa = new Promise((resolve) => {
-   
-        resolve(Productos)
     
-});
+    useEffect(()=>{
+        const promesa = new Promise((resolve) => {
+        resolve(id? Productos.filter(item => item.categoria===id):Productos)
+        });
+        promesa.then(data => {
+            SetData(data);
+        });
+    },[id])
 
-promesa.then(data => {
-    SetData(data);
-});
-
-    },[])
     return (
         <div className="row">
         {    
